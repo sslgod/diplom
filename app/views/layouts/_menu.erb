@@ -1,0 +1,19 @@
+<div class="lavalamp" >
+<ul>
+  <li class="active"></li>
+<li ><%=link_to "Домашняя", root_path%></li>
+<%if teacher_signed_in?%>
+<li><a href="">Мои планы</a></li>
+<li><a href="">Поиск плана</a></li>
+<li><a href="">Создание плана</a></li>
+<li><%=link_to "Выход",logout_path%></li>
+<%else%>
+
+<li><%=link_to "Регистрация",new_teacher_registration_path%></li>
+<li><%=link_to "Войти",new_teacher_session_path%></li>
+<%end%>
+<li><%=link_to "О spkPlan", about_path%></li>
+<li><%=link_to "Помощь",help_path %></li>
+</ul>
+<div class="floatr"></div>
+</div>

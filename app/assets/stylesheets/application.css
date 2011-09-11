@@ -1,0 +1,164 @@
+/*
+ * This is a manifest file that'll automatically include all the stylesheets available in this directory
+ * and any sub-directories. You're free to add application-wide styles to this file and they'll appear at
+ * the top of the compiled file, but it's generally better to create a new file per style scope.
+ *= require_self
+ *= require_tree . 
+*/
+body {
+        background : -webkit-gradient(linear, left top, left bottom, from(rgb(240,240,240)), to(rgb(204,204,204)));
+background : -moz-linear-gradient(top, rgb(240,240,240), rgb(204,204,204));
+height: 1300px;
+background-repeat: no-repeat;
+}
+/*menu*/
+.lavalamp {
+position: relative;
+border: 1px solid #d6d6d6;
+background: #fff;
+padding: 15px;
+-webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+-moz-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+border-radius : 10px;
+-moz-border-radius : 10px;
+-webkit-border-radius : 10px;
+background : -webkit-gradient(linear, left top, left bottom, from(rgb(240,240,240)), to(rgb(204,204,204)));
+background : -moz-linear-gradient(top, rgb(240,240,240), rgb(204,204,204));
+height: 18px;
+}
+a {
+    text-decoration: none;
+    color: #262626;
+    line-height: 20px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    z-index: 300;
+    position: absolute;
+}
+
+ul li {
+    list-style: none;
+    float:left;
+
+    text-align: center;
+    }
+
+ul li a {
+    padding: 0 20px;
+    text-align: center;
+    }
+.floatr {
+position: absolute;
+top: 10px;
+z-index: 50;
+width: 70px;
+height: 30px;
+border-radius : 8px;
+-moz-border-radius : 8px;
+-webkit-border-radius : 8px;
+background : rgba(0,0,0,.20);
+-webkit-transition: all .4s ease-in-out;
+-moz-transition: all .4s ease-in-out;
+}
+
+/*Регистрация*/
+#form_teacher {
+ 
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -khtml-border-radius: 5px;
+        border-radius: 5px;
+        counter-reset: fieldsets;
+        padding: 20px;
+        width: 400px;
+}
+#form_teacher fieldset {
+        border: none;
+        margin-bottom: 10px;
+        }
+
+#form_teacher fieldset:last-of-type {
+        margin-bottom: 0;
+}
+#form_teacher legend {
+        color: #999999;
+        font-size: 16px;
+        font-weight: bold;
+        padding-bottom: 10px;
+        text-shadow: 0 1px 1px #C1F7FF;
+}
+#form_teacher > fieldset > legend:before {
+        
+        counter-increment: fieldsets;
+}
+#form_teacher ol li {
+        background: #71b8ff;
+        background: rgba(255,255,255,.3);
+        border-color: #c6e3ff;
+        border-color: rgba(255,255,255,.6);
+        border-style: solid;
+        border-width: 2px;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -khtml-border-radius: 5px;
+        border-radius: 5px;
+        line-height: 30px;
+        list-style: none;
+        padding: 5px 10px;
+        margin-bottom: 2px;
+        }
+
+#form_teacher ol ol li {
+        background: none;
+        border: none;
+        float: left;
+}
+#form_teacher label {
+        float: left;
+        font-size: 13px;
+        width: 110px;
+        }
+
+#form_teacher fieldset fieldset label {
+        background:none no-repeat left 50%;
+        line-height: 20px;
+        padding: 0 0 0 30px;
+        width: auto;
+        }
+
+#form_teacher label[for=visa] {
+        background-image: url(visa.gif);
+        }
+#form_teacher label[for=amex] {
+        background-image: url(amex.gif);
+        }
+#form_teacher label[for=mastercard] {
+        background-image: url(mastercard.gif);
+        }
+
+#form_teacher fieldset fieldset label:hover {
+        cursor: pointer;}
+#form_teacher button {
+	background: #62C5FF;
+	border: none;
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-khtml-border-radius: 20px;
+	border-radius: 20px;
+	color: #ffffff;
+	display: block;
+	font: 18px Georgia, "Times New Roman", Times, serif;
+	letter-spacing: 1px;
+	margin: auto;
+	padding: 7px 25px;
+	text-shadow: 0 1px 1px #C1F7FF;
+	text-transform: uppercase;
+	}
+
+#form_teacher button:hover {
+	background: #8BE0FF;
+	cursor: pointer;
+}

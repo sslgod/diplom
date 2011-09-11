@@ -1,0 +1,33 @@
+<div id=form_teacher>
+  <fieldset>
+   <legend>Регистрация</legend>
+
+<%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
+  
+   <legend><%= devise_error_messages! %></legend>
+
+   <ol>
+   <li>
+    <%= f.label :"E-mail" %> <br />
+    <%= f.email_field :email %>
+   </li>
+   <li>
+     <%= f.label :Пароль %><br />
+     <%= f.password_field :password %>
+   </li>
+   <li>
+  <%= f.label :Повторите_пароль %><br />
+  <%= f.password_field :password_confirmation %>
+   </li>
+   </ol>
+   </fieldset>
+  <fieldset>
+  <br />
+    <%= render :partial => "devise/shared/links" %>
+  </fieldset>
+  <%= f.submit "Зарегистрироваться" %>
+ <% end %>
+
+</div>
+
+
