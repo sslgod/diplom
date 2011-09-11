@@ -10,7 +10,32 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110910190612) do
+ActiveRecord::Schema.define(:version => 20110911185411) do
+
+  create_table "kplans", :force => true do |t|
+    t.string   "predmet"
+    t.integer  "spec"
+    t.integer  "teacher_id"
+    t.string   "group"
+    t.string   "kurs"
+    t.string   "semestr"
+    t.string   "god"
+    t.integer  "chned"
+    t.integer  "chzan"
+    t.integer  "kurs_proekt"
+    t.integer  "stud_nagruz"
+    t.integer  "nom_ur"
+    t.string   "razdel"
+    t.integer  "nom_ned"
+    t.integer  "chasov"
+    t.string   "vid_zan"
+    t.string   "nagl_pos"
+    t.string   "zad_stud"
+    t.string   "sam_rab_stud"
+    t.string   "litra"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "teachers", :force => true do |t|
     t.string   "email",                                 :default => "", :null => false

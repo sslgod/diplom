@@ -1,0 +1,94 @@
+<%= form_for(@kplan) do |f| %>
+  <% if @kplan.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@kplan.errors.count, "error") %> prohibited this kplan from being saved:</h2>
+
+      <ul>
+      <% @kplan.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :Предмет%><br />
+    <%= f.text_field :predmet %>
+  </div>
+  <div class="field">
+    <%= f.label :Специальность %><br />
+    <%= f.number_field :spec %>
+  </div>
+  
+  <div class="field">
+    <%= f.label :Группы %><br />
+    <%= f.text_field :group %>
+  </div>
+  <div class="field">
+    <%= f.label :Курс %><br />
+    <%= f.text_field :kurs %>
+  </div>
+  <div class="field">
+    <%= f.label :Семестр %><br />
+    <%= f.text_field :semestr %>
+  </div>
+  <div class="field">
+    <%= f.label :Учебный_год %><br />
+    <%= f.text_field :god %>
+  </div>
+  <div class="field">
+    <%= f.label :Число_недель %><br />
+    <%= f.number_field :chned %>
+  </div>
+  <div class="field">
+    <%= f.label :Число_занятий %><br />
+    <%= f.number_field :chzan %>
+  </div>
+  <div class="field">
+    <%= f.label :Курсовое_проектирование %><br />
+    <%= f.number_field :kurs_proekt %>
+  </div>
+  <div class="field">
+    <%= f.label :Самостоятельная_нагрузка_студентов %><br />
+    <%= f.number_field :stud_nagruz %>
+  </div>
+  <div class="field">
+    <%= f.label :Номер_урока %><br />
+    <%= f.number_field :nom_ur %>
+  </div>
+  <div class="field">
+    <%= f.label :Разделы_и_темы %><br />
+    <%= f.text_field :razdel %>
+  </div>
+  <div class="field">
+    <%= f.label :Номера_недель %><br />
+    <%= f.number_field :nom_ned %>
+  </div>
+  <div class="field">
+    <%= f.label :Количество_часов %><br />
+    <%= f.number_field :chasov %>
+  </div>
+  <div class="field">
+    <%= f.label :Вид_занятий %><br />
+    <%= f.text_field :vid_zan %>
+  </div>
+  <div class="field">
+    <%= f.label :Наглядные_пособия %><br />
+    <%= f.text_field :nagl_pos %>
+  </div>
+  <div class="field">
+    <%= f.label :Задания_для_студентов %><br />
+    <%= f.text_field :zad_stud %>
+  </div>
+  <div class="field">
+    <%= f.label :Самостоятельная_работа_студентов %><br />
+    <%= f.text_field :sam_rab_stud %>
+  </div>
+  <div class="field">
+    <%= f.label :Литература %><br />
+    <%= f.text_field :litra %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

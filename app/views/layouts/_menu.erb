@@ -3,9 +3,10 @@
   <li class="active"></li>
 <li ><%=link_to "Домашняя", root_path%></li>
 <%if teacher_signed_in?%>
-<li><a href="">Мои планы</a></li>
+<li><%=link_to "Мои планы",kplans_path %></li>
 <li><a href="">Поиск плана</a></li>
-<li><a href="">Создание плана</a></li>
+<li><%=link_to "Новый план", new_kplan_path%></li>
+<li><%=link_to "Профиль", edit_teacher_registration_path%></li>
 <li><%=link_to "Выход",logout_path%></li>
 <%else%>
 

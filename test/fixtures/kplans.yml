@@ -1,0 +1,45 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  predmet: MyString
+  spec: 1
+  teacher_id: 1
+  group: MyString
+  kurs: MyString
+  semestr: MyString
+  god: MyString
+  chned: 1
+  chzan: 1
+  kurs_proekt: 1
+  stud_nagruz: 1
+  nom_ur: 1
+  razdel: MyString
+  nom_ned: 1
+  chasov: 1
+  vid_zan: MyString
+  nagl_pos: MyString
+  zad_stud: MyString
+  sam_rab_stud: MyString
+  litra: MyString
+
+two:
+  predmet: MyString
+  spec: 1
+  teacher_id: 1
+  group: MyString
+  kurs: MyString
+  semestr: MyString
+  god: MyString
+  chned: 1
+  chzan: 1
+  kurs_proekt: 1
+  stud_nagruz: 1
+  nom_ur: 1
+  razdel: MyString
+  nom_ned: 1
+  chasov: 1
+  vid_zan: MyString
+  nagl_pos: MyString
+  zad_stud: MyString
+  sam_rab_stud: MyString
+  litra: MyString
