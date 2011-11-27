@@ -73,3 +73,7 @@
 
 <%= link_to 'Edit', edit_kalplan_tltle_path(@kalplan_tltle) %> |
 <%= link_to 'Back', kalplan_tltles_path %>
+
+<% for kalplan_body in @kalplan_tltle.KalplanBodies %>
+  <%= kalplan_body.razdel %>
+<%end%>
