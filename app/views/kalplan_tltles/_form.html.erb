@@ -1,0 +1,74 @@
+<%= form_for(@kalplan_tltle) do |f| %>
+  <% if @kalplan_tltle.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@kalplan_tltle.errors.count, "error") %> prohibited this kalplan_tltle from being saved:</h2>
+
+      <ul>
+      <% @kalplan_tltle.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :Предмет %><br />
+    <%= f.text_field :predmet %>
+  </div>
+  <div class="field">
+    <%= f.label :Специальность %><br />
+    <%= f.number_field :spec %>
+  </div>
+  <div class="field">
+    <%= f.label :Группа %><br />
+    <%= f.text_field :group %>
+  </div>
+  <div class="field">
+    <%= f.label :Курс %><br />
+    <%= f.text_field :kurs %>
+  </div>
+  <div class="field">
+    <%= f.label :Семестр %><br />
+    <%= f.text_field :semestr %>
+  </div>
+  <div class="field">
+    <%= f.label :Год %><br />
+    <%= f.text_field :god %>
+  </div>
+  <div class="field">
+    <%= f.label :'Число недель' %><br />
+    <%= f.number_field :chislo_ned %>
+  </div>
+  <div class="field">
+    <%= f.label :'Число занятий' %><br />
+    <%= f.number_field :chislo_zan %>
+  </div>
+  <div class="field">
+    <%= f.label :'Курсовое проектирование' %><br />
+    <%= f.number_field :kprtk %>
+  </div>
+  <div class="field">
+    <%= f.label :'Студенческая нагрузка' %><br />
+    <%= f.number_field :stnagr %>
+  </div>
+  <div class="field">
+    <%= f.label :'Лабораторные работы' %><br />
+    <%= f.number_field :labrab %>
+  </div>
+  <div class="field">
+    <%= f.label :'Учреждено' %><br />
+    <%= f.text_field :uchregd %>
+  </div>
+  <div class="field">
+    <%= f.label :'Преподаватель' %><br />
+    <%= f.text_field :prepod %>
+  </div>
+ 
+   
+
+  <div class="actions">
+    <%= f.submit %>
+
+  </div>
+<% end %>
+<

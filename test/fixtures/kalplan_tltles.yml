@@ -1,0 +1,33 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  predmet: MyString
+  spec: 1
+  group: MyString
+  kurs: MyString
+  semestr: MyString
+  god: MyString
+  chislo_ned: 1
+  chislo_zan: 1
+  kprtk: 1
+  stnagr: 1
+  labrab: 1
+  uchregd: MyString
+  prepod: MyString
+  teacher_id: 1
+
+two:
+  predmet: MyString
+  spec: 1
+  group: MyString
+  kurs: MyString
+  semestr: MyString
+  god: MyString
+  chislo_ned: 1
+  chislo_zan: 1
+  kprtk: 1
+  stnagr: 1
+  labrab: 1
+  uchregd: MyString
+  prepod: MyString
+  teacher_id: 1

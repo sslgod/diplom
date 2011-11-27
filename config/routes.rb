@@ -1,4 +1,8 @@
 Diplom::Application.routes.draw do
+
+
+  resources :kalplan_tltles
+  
   resources :kplans
 
   devise_for :teachers do get 'logout' => 'devise/sessions#destroy' end

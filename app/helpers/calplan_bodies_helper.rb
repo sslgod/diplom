@@ -1,0 +1,2 @@
+module CalplanBodiesHelper
+end

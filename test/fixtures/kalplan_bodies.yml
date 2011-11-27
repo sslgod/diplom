@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  razdel: MyString
+  nned: 1
+  chasov: 1
+  vid_zan: MyString
+  nagl_pos: MyString
+  zad_stud: MyString
+  kalplan_tltle_id: 1
+
+two:
+  razdel: MyString
+  nned: 1
+  chasov: 1
+  vid_zan: MyString
+  nagl_pos: MyString
+  zad_stud: MyString
+  kalplan_tltle_id: 1

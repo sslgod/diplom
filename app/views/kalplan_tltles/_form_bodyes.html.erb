@@ -1,0 +1,23 @@
+<%= form_for(@kalplan_body) do |f| %>
+  <% if @kalplan_body.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@kalplan_body.errors.count, "error") %> prohibited this kalplan_tltle from being saved:</h2>
+
+      <ul>
+      <% @kalplan_body.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :Раздел %><br />
+    <%= f.text_field :razdel %>
+  </div>
+
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
