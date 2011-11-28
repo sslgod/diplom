@@ -1,0 +1,33 @@
+<h1>Уроки</h1>
+
+<table>
+  <tr>
+    <th>Раздел</th><th>|</th>
+    <th>Номера недель</th><th>|</th>
+    <th>Вид занятий</th><th>|</th>
+    <th>Задания студентам</th><th>|</th>
+    
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+
+<% @kbodies.each do |kbody| %>
+  <tr>
+    <td><%= kbody.razdel %></td><td>|</td>
+    <td><%= kbody.nned %></td><td>|</td>
+    <td><%= kbody.vid_zan %></td><td>|</td>
+    <td><%= kbody.zad_stud %></td><td>|</td>
+ 
+    <td><%= link_to 'Просмотреть', kbody_path(kbody) %></td>
+    <td><%= link_to 'Редактировать', edit_kbody_path(kbody) %></td>
+    <td><%= link_to 'Удалить', kbody, confirm: 'Are you sure?', method: :delete %></td>
+    
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'Добавить урок', new_kalplan_tltle_kbody_path %>

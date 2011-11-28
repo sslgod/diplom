@@ -1,0 +1,43 @@
+<%= form_for([ @kalplan_tltle, @kbody ]) do |f| %>
+  <% if @kbody.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@kbody.errors.count, "error") %> prohibited this kbody from being saved:</h2>
+
+      <ul>
+      <% @kbody.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  
+  <div class="field">
+    <%= f.label :'Наименование разделов и тем' %><br />
+    <%= f.text_field :razdel %>
+  </div>
+  <div class="field">
+    <%= f.label :'Номера недель' %><br />
+    <%= f.text_field :nned %>
+  </div>
+  <div class="field">
+    <%= f.label :'Количество часов' %><br />
+    <%= f.number_field :chasov %>
+  </div>
+  <div class="field">
+    <%= f.label :'Вид занятий' %><br />
+    <%= f.text_field :vid_zan %>
+  </div>
+  <div class="field">
+    <%= f.label :'Наглядные пособия' %><br />
+    <%= f.text_field :nagl_pos %>
+  </div>
+  <div class="field">
+    <%= f.label :'Задания для студентов' %><br />
+    <%= f.text_field :zad_stud %>
+  </div>
+ 
+
+  <div class="actions">
+    <%= f.submit :'Добавить урок' %>
+  </div>
+<% end %>

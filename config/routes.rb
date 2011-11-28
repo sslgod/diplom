@@ -1,14 +1,18 @@
 Diplom::Application.routes.draw do
 
 
-  resources :kalplan_tltles
+  
+
+  resources :kalplan_tltles do resources :kbodies  end
+  resources :kbodies 
+  resources :kalplan_tltles 
   
   resources :kplans
 
   devise_for :teachers do get 'logout' => 'devise/sessions#destroy' end
 
   
-
+ 
 
   match 'help' => 'pages#help'
 match 'about' => 'pages#about'

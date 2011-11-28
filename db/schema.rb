@@ -11,11 +11,11 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110930191249) do
+ActiveRecord::Schema.define(:version => 20111128101452) do
 
   create_table "kalplan_bodies", :force => true do |t|
     t.string   "razdel"
-    t.integer  "nned"
+    t.string   "nned"
     t.integer  "chasov"
     t.string   "vid_zan"
     t.string   "nagl_pos"
@@ -40,6 +40,18 @@ ActiveRecord::Schema.define(:version => 20110930191249) do
     t.string   "uchregd"
     t.string   "prepod"
     t.integer  "teacher_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "kbodies", :force => true do |t|
+    t.string   "razdel"
+    t.string   "nned"
+    t.integer  "chasov"
+    t.string   "vid_zan"
+    t.string   "nagl_pos"
+    t.string   "zad_stud"
+    t.integer  "kalplan_tltle_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

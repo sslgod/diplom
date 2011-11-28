@@ -1,22 +1,22 @@
 <p id="notice"><%= notice %></p>
-
+<h2> Титульный лист </h2>
 <p>
-  <b>Predmet:</b>
+  <b>Предмет</b>
   <%= @kalplan_tltle.predmet %>
 </p>
 
 <p>
-  <b>Spec:</b>
+  <b>Специальность</b>
   <%= @kalplan_tltle.spec %>
 </p>
 
 <p>
-  <b>Group:</b>
+  <b>Группа</b>
   <%= @kalplan_tltle.group %>
 </p>
 
 <p>
-  <b>Kurs:</b>
+  <b>Курс</b>
   <%= @kalplan_tltle.kurs %>
 </p>
 
@@ -71,9 +71,19 @@
 </p>
 
 
-<%= link_to 'Edit', edit_kalplan_tltle_path(@kalplan_tltle) %> |
-<%= link_to 'Back', kalplan_tltles_path %>
+<%= link_to 'Редактировать', edit_kalplan_tltle_path(@kalplan_tltle) %> |
+<%= link_to 'Назад', kalplan_tltles_path %> |
+<%= link_to 'Содержание плана',  kalplan_tltle_kbodies_path(@kalplan_tltle) %>
 
-<% for kalplan_body in @kalplan_tltle.KalplanBodies %>
-  <%= kalplan_body.razdel %>
-<%end%>
+
+
+<h2> Содержание </h2>
+
+
+
+
+
+
+
+
+

@@ -1,4 +1,4 @@
 class KalplanTltle < ActiveRecord::Base
   belongs_to :teacher
-  has_many :KalplanBodies
+  has_many :Kbodies
 end

@@ -14,6 +14,7 @@ class KalplanTltlesController < ApplicationController
   # GET /kalplan_tltles/1.json
   def show
     @kalplan_tltle = KalplanTltle.find(params[:id])
+   
 
     respond_to do |format|
       format.html # show.html.erb
@@ -87,5 +88,22 @@ class KalplanTltlesController < ApplicationController
       format.html { redirect_to kalplan_tltles_url }
       format.json { head :ok }
     end
+  end
+  
+  
+  def newkbody
+    @kalplan_tltle = KalplanTltle.find(params[:id])
+    #@kalplan_body = KalplanTltle.find(params[:id]).KalplanBodies.new
+
+    respond_to do |format|
+      format.html # new.html.erb
+      format.json { render json: @kalplan_body }
+    end
+  end
+  
+  def kalplanbody
+     @kalplan_tltle = KalplanTltle.find(params[:id])
+     
+    
   end
 end

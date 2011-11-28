@@ -1,21 +1,12 @@
-<h1>Listing kalplan_tltles</h1>
+<h1>Мои календарные планы</h1>
 
 <table>
   <tr>
-    <th>Predmet</th>
-    <th>Spec</th>
-    <th>Group</th>
-    <th>Kurs</th>
-    <th>Semestr</th>
-    <th>God</th>
-    <th>Chislo ned</th>
-    <th>Chislo zan</th>
-    <th>Kprtk</th>
-    <th>Stnagr</th>
-    <th>Labrab</th>
-    <th>Uchregd</th>
-    <th>Prepod</th>
-    <th>Teacher</th>
+    <th>Предмет</th><th>|</th>
+    <th>Специальность</th><th>|</th>
+    <th>Группа</th><th>|</th>
+    <th>Курс</th><th>|</th>
+    
     <th></th>
     <th></th>
     <th></th>
@@ -24,28 +15,19 @@
 
 <% @kalplan_tltles.each do |kalplan_tltle| %>
   <tr>
-    <td><%= kalplan_tltle.predmet %></td>
-    <td><%= kalplan_tltle.spec %></td>
-    <td><%= kalplan_tltle.group %></td>
-    <td><%= kalplan_tltle.kurs %></td>
-    <td><%= kalplan_tltle.semestr %></td>
-    <td><%= kalplan_tltle.god %></td>
-    <td><%= kalplan_tltle.chislo_ned %></td>
-    <td><%= kalplan_tltle.chislo_zan %></td>
-    <td><%= kalplan_tltle.kprtk %></td>
-    <td><%= kalplan_tltle.stnagr %></td>
-    <td><%= kalplan_tltle.labrab %></td>
-    <td><%= kalplan_tltle.uchregd %></td>
-    <td><%= kalplan_tltle.prepod %></td>
-    <td><%= kalplan_tltle.teacher_id %></td>
-    <td><%= link_to 'Show', kalplan_tltle %></td>
-    <td><%= link_to 'Edit', edit_kalplan_tltle_path(kalplan_tltle) %></td>
-    <td><%= link_to 'Destroy', kalplan_tltle, confirm: 'Are you sure?', method: :delete %></td>
-    <td><%= link_to 'Ds', kalplan_tltle,  method: :addbody %></td>
+    <td><%= kalplan_tltle.predmet %></td><td>|</td>
+    <td><%= kalplan_tltle.spec %></td><td>|</td>
+    <td><%= kalplan_tltle.group %></td><td>|</td>
+    <td><%= kalplan_tltle.kurs %></td><td>|</td>
+ 
+    <td><%= link_to 'Просмотреть', kalplan_tltle %></td>
+    <td><%= link_to 'Редактировать', edit_kalplan_tltle_path(kalplan_tltle) %></td>
+    <td><%= link_to 'Удалить', kalplan_tltle, confirm: 'Are you sure?', method: :delete %></td>
+    
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New Kalplan tltle', new_kalplan_tltle_path %>
+<%= link_to 'Создать новый календарный план', new_kalplan_tltle_path %>
