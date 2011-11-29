@@ -7,6 +7,8 @@ gem 'rails', '3.1.0'
 #gem 'sqlite3'
 gem 'devise'
 gem 'json'
+gem 'therubyracer'
+gem 'execjs'
 
 gem 'pg'
 
