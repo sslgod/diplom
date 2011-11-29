@@ -1,5 +1,38 @@
 <p id="notice"><%= notice %></p>
 
+<h2> Урок </h2>
+<p>
+  <b>Раздел</b>
+  <%= @kbody.razdel %>
+</p>
+
+<p>
+  <b>Номера недель</b>
+  <%= @kbody.nned %>
+</p>
+
+
+
+<p>
+  <b>Количество часов</b>
+  <%= @kbody.chasov %>
+</p>
+
+<p>
+  <b>Вид занятий</b>
+  <%= @kbody.vid_zan %>
+</p>
+
+<p>
+  <b>Наглядные пособия</b>
+  <%= @kbody.nagl_pos %>
+</p>
+<p>
+  <b>Задание для студентов</b>
+  <%= @kbody.zad_stud %>
+</p>
+
+
 
 <%= link_to 'Редактировать', edit_kbody_path(@kbody) %> |
 <%= link_to 'Назад', kbodies_path %>

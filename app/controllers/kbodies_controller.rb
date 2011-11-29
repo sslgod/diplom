@@ -76,12 +76,13 @@ class KbodiesController < ApplicationController
   # DELETE /kbodies/1
   # DELETE /kbodies/1.json
   def destroy
-    @kalplan_tltle = KalplanTltle.find(params[:kalplan_tltle_id])
+   # @kalplan_tltle = KalplanTltle.find(params[:kalplan_tltle_id])
     @kbody = Kbody.find(params[:id])
+    @kalplan_tltle_id = @kbody.kalplan_tltle_id
     @kbody.destroy
 
     respond_to do |format|
-      format.html { redirect_to :kalplan_tltle_kbodies }
+      format.html { redirect_to :kalplan_tltles }
       format.json { head :ok }
     end
   end
